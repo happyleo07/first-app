@@ -1,0 +1,24 @@
+<!--
+  Generated template for the VersionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>版本信息</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+
+        <ion-item class="margin-top-20">
+            <span>当前版本</span>
+            <span float-right (click)="update()"><span *ngIf="!isLatest" class="red-span"></span>{{version}}</span>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,219 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*公共部分 */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  writed by Leo   */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+html {
+    width: 100%;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+span {
+    color: #000;
+}
+
+body {
+    background-color: #f5f6f7;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+}
+
+input {
+    border: 0;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+div {
+    display: block;
+}
+
+
+/*html5*/
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block;
+}
+
+.lt {
+    float: left;
+}
+
+.rt {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block
+}
+
+
+/* 头部 */
+
+header {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #617fde;
+    text-align: center;
+    position: relative;
+}
+
+header p {
+    font-size: 0.33rem;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.mes_btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    display: block;
+}
+
+.mes_btn img {
+    width: 20px;
+}
+
+.mes_btn img,
+.nav_btn img {
+    display: block;
+}
+
+.toolbar-background-md {
+    background: #488aff;
+}
+
+.toolbar-title-md {
+    text-align: center;
+    color: #ffffff;
+}

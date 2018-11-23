@@ -1,0 +1,11 @@
+{
+    "name": "ionic-demo",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "ionic-angular",
+    "proxies": [{
+        "path": "/postman",
+        "proxyUrl": "http://localhost:80"
+    }]
+}

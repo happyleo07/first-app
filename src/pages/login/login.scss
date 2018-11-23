@@ -1,0 +1,114 @@
+li,
+ul {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+input {
+    border: 0;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+$width:100%;
+.show {
+    display: block
+}
+
+.hide {
+    display: none;
+}
+
+.login_box {
+    width: 95%;
+    margin: 120px auto 0;
+    /* height: 310px;
+    position: absolute;
+    top: 50%;
+    margin-top: -155px;
+    left: 50% */
+}
+
+.login_bbg {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    // background: #e5e5e5;
+}
+
+.user_bg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0px auto 20px;
+}
+
+.mes_box {
+    width: $width;
+}
+
+.tab_menu,
+.tab_box {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tab_menu li {
+    float: left;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+}
+
+.tab_menu li.cur {
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    background: #03a9f4;
+    color: #ffffff;
+}
+
+.tab_box>div>div {
+    width: $width;
+    overflow: hidden;
+    height: 32px;
+    margin: 15px auto;
+}
+
+.tab_box>div input {
+    width: $width;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: 10px;
+    background: #ffffff;
+}
+
+.tab_box>div button {
+    width: $width;
+    height: 30px;
+    border-radius: 5px;
+    background: #03a9f4;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+}
+
+.alert-message {
+    overflow: hidden;
+}

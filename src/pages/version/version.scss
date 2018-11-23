@@ -1,0 +1,56 @@
+page-version {
+    .searchToolBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        box-sizing: border-box;
+    }
+    .back-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .version-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin-top: 30px;
+    }
+    .version {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .update-btn {
+        margin-top: 20px;
+        width: 130px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #12b7f5;
+        color: white;
+        font-size: 16px;
+    }
+    .submit {
+        border: 1px solid #34b4fc;
+        background-color: #34b4fc;
+        margin-top: 20px;
+    }
+    .list-ios .item-block .item-inner {
+        border-bottom: 1px solid #c8c7cc;
+    }
+    .red-span {
+        background-color: red;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 2px;
+    }
+}

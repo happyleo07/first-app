@@ -1,0 +1,63 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>setting</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            更多
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+
+    <ion-list class="top-list">
+        <button ion-item [navPush]="userInfoPage">
+          <ion-avatar item-left>
+              <img src="./assets/icon/user.jpg">
+          </ion-avatar>
+          <h2>Leo</h2>
+          <p>账号：18600001111</p>
+      </button>
+    </ion-list>
+
+    <!-- <ion-list>
+      <ion-item>
+          控件1
+      </ion-item>
+      
+      <button ion-item>
+          <ion-avatar item-left>
+              <img src="./assets/icon/user.jpg">
+          </ion-avatar>
+          控件3
+      </button>
+  </ion-list> -->
+
+    <ion-list>
+        <button ion-item (click)="checkversion()">
+        关于我们
+          <span  item-end>V1.0</span>
+      </button>
+        <!-- <ion-item>
+            <ion-label>是否接受推送消息</ion-label>
+            <ion-toggle [(ngModel)]="pusNumber" (ionChange)="savePush()"></ion-toggle>
+        </ion-item> -->
+    </ion-list>
+
+    <div style="text-align: center; margin-left: 30px; margin-right: 30px;margin-top: 30px;">
+        <!-- <button ion-button block submit (click)="logout()" > -->
+        <button ion-button block (click)="logout()">
+          退出登录
+      </button>
+    </div>
+</ion-content>

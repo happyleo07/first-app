@@ -1,0 +1,51 @@
+<ion-content>
+    <div class="login_box">
+        <!-- <div class="login_bbg">
+            <img src="./assets/imgs/tony.jpg" alt="" class="user_bg">
+        </div> -->
+        <form #loginForm="ngForm" class="login-form">
+
+            <div class="mes_box" id="tabs">
+                <div class="tab_menu" style="width:270px;">
+                    <ul>
+                        <li class="tab" [ngClass]="item==0 ? 'cur' : ''" (click)="OnItemClick(0)">电话登录</li>
+                        <li class="tab" [ngClass]="item==1 ? 'cur' : ''" (click)="OnItemClick(1)">用户名登录</li>
+                    </ul>
+                </div>
+                <form>
+                    <div class="tab_box">
+                        <div [style.display]="item == 0 ? 'block' : 'none'">
+                            <div>
+                                <input [(ngModel)]="user.mobile" name="mobile" #mobile required placeholder="电话号码" type="text" (ionBlur)="loseFocus()" (ionFocus)="getFocus()">
+                            </div>
+                            <div>
+                                <button type="button" style="float:left;width:100px;margin-right:20px" (click)="getCode()" [disabled]="!verifyCode.disable">{{verifyCode.verifyCodeTips}}</button>
+                                <input [(ngModel)]="user.yznumber" name="yznumber" #yznumber required type="text" placeholder="请输入验证码" style="width:178px;float:right" (ionBlur)="loseFocus()" (ionFocus)="getFocus()">
+                            </div>
+                            <div>
+                                <button type="button" (click)="login()">登录</button>
+                            </div>
+                        </div>
+                        <div [style.display]="item == 1 ? 'block' : 'none'">
+                            <div>
+                                <input [(ngModel)]="user.username" name="username" #username required type="text" placeholder="请输入用户名" (ionBlur)="loseFocus()" (ionFocus)="getFocus()">
+                            </div>
+                            <div>
+                                <input [(ngModel)]="user.password" name="password" #password required placeholder="请输入密码" type="password" (ionBlur)="loseFocus()" (ionFocus)="getFocus()">
+                            </div>
+                            <div>
+                                <button type="button" (click)="login_2()">登录</button>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" (click)="forgetPassword()">忘记密码?</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </form>
+    </div>
+    <script>
+    </script>
+</ion-content>

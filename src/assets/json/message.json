@@ -1,0 +1,16 @@
+{
+    "code": 200,
+    "msg": "",
+    "data": [{
+
+        "userid": "1",
+
+        "username": "cuizhe",
+
+        "mobile": "15692168206",
+
+        "message": "测试json文件读取",
+        "password": "000000"
+
+    }]
+}
